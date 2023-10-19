@@ -10243,27 +10243,66 @@ section.resume-section .resume-section-content {
 /* End About */
 
 /* Contact */
-#contact .subheading a {
+#contact .message {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#contact .right a {
   text-decoration: none;
   position: relative;
 }
 
-#contact .subheading a::after {
+#contact .right a::after {
   content: "";
   position: absolute;
   background-color: #bd5d38;
   height: 2px;
   width: 100%;
-  bottom: 5px;
+  bottom: 1px;
   left: 0;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.5s;
 }
 
-#contact .subheading a:hover::after {
+#contact .right a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
+#contact .item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 25px;
+}
+
+#contact .item .left {
+  padding: 20px;
+  /* border: 1px solid black; */
+  margin-right: 15px;
+  min-width: 66px;
+  min-height: 66px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}  
+
+#contact .item .left i {
+  font-size: 24px;
+  color: #bd5d38;
+}
+
+#contact .item .right p {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#contact .item .right p,
+#contact .item .right a {
+  font-size: 20px;
+}
 /* End Contact */
