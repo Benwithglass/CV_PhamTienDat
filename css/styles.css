@@ -10141,11 +10141,11 @@ img:hover {
 section.resume-section {
   display: flex;
   align-items: center;
-  padding-left: 1rem;
+  /* padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 5rem;
-  padding-bottom: 5rem;
-  max-width: 75rem;
+  padding-bottom: 5rem; */
+  max-width: 100vw;
 }
 section.resume-section .resume-section-content {
   width: 100%;
@@ -10158,15 +10158,57 @@ section.resume-section .resume-section-content {
 }
 @media (min-width: 992px) {
   section.resume-section {
-    padding-left: 3rem;
+    /* padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 5rem; */
   }
 }
 
 /* Edit */
-/* About */
+/* Welcome */
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(5%, 0, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+} */
+
+#welcome .resume-section-content {
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+#welcome .left {
+  margin-right: 120px;
+  padding-left: 320px;
+
+  /* animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  /* transform: translateY(0, 0); */
+  /* transform: scaleX(0); */ 
+}
+
+#welcome .left h1 {
+  font-size: 6rem;
+}
+
+#welcome .message h3 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: none;
+  font-size: 17px;
+  margin-top: 20px;
+  font-weight: 300;
+  color: #7c8594;
+}
+
 #welcome img {
   vertical-align: middle;
   border-style: none;
@@ -10190,10 +10232,11 @@ section.resume-section .resume-section-content {
   border: 3px solid black;
 	border-radius: 30% 70% 53% 47% / 26% 46% 54% 74%;
 	content: "";
-	height: 27vmin;
+	height: 35vmin;
 	position: absolute;
-	width: 27vmin;
+	width: 35vmin;
   z-index: -1;
+  top: -45px;
 }
 
 
@@ -10240,12 +10283,18 @@ section.resume-section .resume-section-content {
 		border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
 	}
 }
+/* End Welcome */
+
+/* About */
+#about {
+  background-color: #F9F9F9;
+}
 /* End About */
 
 /* Contact */
 #contact .message {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 #contact .right a {
